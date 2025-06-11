@@ -54,8 +54,9 @@ Build a simple REST API in Laravel for managing events and bookings.
 1. Copy `.env.example` to `.env` and configure your DB
 2. Copy `./vendor/bin/sail up` build sail image and serve app
 3. Run `./vendor/bin/sail php artisan key:generate`
-4. Run `./vendor/bin/sail up php artisan optimize:clear`
-5. Run migrations: `./vendor/bin/sail php artisan migrate`
+4. Run `./vendor/bin/sail composer install`
+5. Run `./vendor/bin/sail up php artisan optimize:clear`
+6. Run migrations: `./vendor/bin/sail php artisan migrate`
 ---
 ## Application will run on 
 http://localhost
