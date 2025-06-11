@@ -12,6 +12,7 @@ class BookingController extends Controller
     private BookingService $bookingService;
     /**
      * Create a new class instance.
+     * @param BookingService $bookingService
      */
     public function __construct(BookingService $bookingService)
     {
@@ -19,6 +20,9 @@ class BookingController extends Controller
     }
     /**
      * Store a newly created resource in storage.
+     * $@param StoreBookingRequest $request
+     * @param int $eventId
+     * @return JsonResponse
      */
     public function store(StoreBookingRequest $request, int $eventId): JsonResponse
     {

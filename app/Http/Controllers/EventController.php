@@ -11,6 +11,8 @@ class EventController extends Controller
     private $eventService;
     /**
      * Create a new class instance.
+     * @param EventService $eventService
+     * 
      */
     public function __construct(EventService $eventService)
     {
@@ -37,6 +39,7 @@ class EventController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     * @param StoreEventRequest $request
      */
     public function store(StoreEventRequest $request)
     {
